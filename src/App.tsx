@@ -132,7 +132,7 @@ export default function EngagementInvitation() {
               <span className="inline-block px-5 py-2 rounded-full bg-brown-base border border-theme-500/20 text-[10px] uppercase tracking-[0.5em] text-theme-600 font-bold mb-6">
                 Save the Date
               </span>
-              <h1 className="font-cinzel text-4xl md:text-5xl text-theme-900 mb-4 tracking-tight">
+              <h1 className="font-cinzel text-4xl md:text-5xl text-[#D4AF37] mb-4 tracking-tight drop-shadow-md">
                 Shakila & Randika
               </h1>
               <p className="text-theme-600 text-sm tracking-[0.2em] font-light">DECEMBER 02, 2026</p>
@@ -192,12 +192,12 @@ export default function EngagementInvitation() {
                     audioRef.current.play().then(() => setIsPlaying(true)).catch(err => console.log("Audio autoplay blocked", err));
                   }
                 }}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 rounded-full bg-gradient-to-br from-theme-200 via-theme-100 to-theme-300 shadow-2xl border-4 border-[#3d2a25] flex items-center justify-center group-hover:shadow-theme-500/20 cursor-pointer"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 rounded-full bg-gradient-to-br from-theme-200 via-theme-100 to-theme-300 shadow-2xl border-4 border-[#2F1B40] flex items-center justify-center group-hover:shadow-theme-500/20 cursor-pointer"
               >
                 <div className="text-center">
-                  <p className="font-cinzel text-2xl font-bold text-[#3d2a25] leading-none">S&R</p>
-                  <div className="h-px w-10 bg-[#3d2a25]/30 mx-auto my-1.5" />
-                  <p className="text-[8px] uppercase tracking-[0.3em] font-bold text-[#3d2a25]">Open</p>
+                  <p className="font-cinzel text-2xl font-bold text-[#2F1B40] leading-none">S&R</p>
+                  <div className="h-px w-10 bg-[#2F1B40]/30 mx-auto my-1.5" />
+                  <p className="text-[8px] uppercase tracking-[0.3em] font-bold text-[#2F1B40]">Open</p>
                 </div>
               </motion.div>
 
@@ -250,7 +250,7 @@ export default function EngagementInvitation() {
               <div className="flex-1 overflow-y-auto relative z-10 scrollbar-thin">
 
                 {/* Scrolling Background and Content Wrapper */}
-                <div 
+                <div
                   className="min-h-full w-full flex flex-col items-center justify-start p-4 sm:p-6 pb-20 relative text-center bg-top bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url('/ChatGPT%20Image%20Sep%201,%202026,%2004_23_03%20AM.png')` }}
                 >
@@ -265,16 +265,16 @@ export default function EngagementInvitation() {
                         <p className="font-playball text-3xl md:text-4xl text-theme-900 drop-shadow-sm mb-1">
                           Dear
                         </p>
-                        <p className="font-cinzel text-base md:text-lg font-bold text-[#c59d5f] tracking-wider">
+                        <p className="font-cinzel text-base md:text-lg font-bold text-[#D4AF37] tracking-wider">
                           {guestPrefix} {guestName},
                         </p>
                       </div>
                     )}
 
-                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 mb-5 w-full">
-                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
-                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
-                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
+                    <div className="flex items-center justify-center gap-2 text-[#9B70C0] opacity-80 mb-5 w-full">
+                      <div className="h-[1.5px] w-12 bg-[#9B70C0]/50"></div>
+                      <div className="text-[#9B70C0] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-12 bg-[#9B70C0]/50"></div>
                     </div>
 
                     <p className="font-playball text-4xl md:text-5xl tracking-wide text-theme-900 drop-shadow-sm mb-6">
@@ -284,29 +284,29 @@ export default function EngagementInvitation() {
                     <div className="text-center">
                       <p className="text-[11px] md:text-xs font-cinzel text-theme-900 uppercase tracking-widest leading-[2] font-bold">
                         Mr. Sudath De Silva & Mrs. Sumalka De Silva
-                        <br/>
+                        <br />
                         <span className="text-[9px] md:text-[10px] tracking-[0.25em] text-theme-700 mt-2 mb-2 inline-block">TOGETHER WITH</span>
-                        <br/>
+                        <br />
                         Mr. Benaji Wickramarachchi & Mrs. Sandhya Liyanagamage
                       </p>
                     </div>
 
                     <div className="text-center space-y-1 my-6 px-2">
-                       <p className="text-[11px] md:text-xs tracking-[0.15em] font-bold text-theme-900 uppercase leading-[2] font-cinzel">
-                         Request the pleasure of your presence<br/>at the wedding celebration of<br/>their beloved children
-                       </p>
+                      <p className="text-[11px] md:text-xs tracking-[0.15em] font-bold text-theme-900 uppercase leading-[2] font-cinzel">
+                        Request the pleasure of your presence<br />at the wedding celebration of<br />their beloved children
+                      </p>
                     </div>
 
                     <div className="flex flex-col items-center justify-center space-y-0 my-2">
-                      <h2 className="text-6xl md:text-7xl font-playball text-[#c59d5f] leading-none py-1 drop-shadow-md">Shakila</h2>
-                      <span className="text-4xl md:text-5xl font-playball text-[#c59d5f] leading-none drop-shadow-md">&</span>
-                      <h2 className="text-6xl md:text-7xl font-playball text-[#c59d5f] leading-none py-1 drop-shadow-md">Randika</h2>
+                      <h2 className="text-6xl md:text-7xl font-playball text-[#D4AF37] leading-none py-1 drop-shadow-md">Shakila</h2>
+                      <span className="text-4xl md:text-5xl font-playball text-[#D4AF37] leading-none drop-shadow-md">&</span>
+                      <h2 className="text-6xl md:text-7xl font-playball text-[#D4AF37] leading-none py-1 drop-shadow-md">Randika</h2>
                     </div>
 
-                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 my-8 w-full">
-                      <div className="h-[1.5px] w-16 bg-[#c59d5f]/50"></div>
-                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
-                      <div className="h-[1.5px] w-16 bg-[#c59d5f]/50"></div>
+                    <div className="flex items-center justify-center gap-2 text-[#9B70C0] opacity-80 my-8 w-full">
+                      <div className="h-[1.5px] w-16 bg-[#9B70C0]/50"></div>
+                      <div className="text-[#9B70C0] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-16 bg-[#9B70C0]/50"></div>
                     </div>
 
                     <div className="flex items-stretch justify-center w-full max-w-[340px] mx-auto gap-4">
@@ -315,13 +315,13 @@ export default function EngagementInvitation() {
                         <p className="text-5xl md:text-6xl font-cinzel text-theme-900 leading-none my-1 font-bold">02<span className="text-xl md:text-2xl align-super font-semibold">ND</span></p>
                         <p className="text-[10px] md:text-[11px] font-cinzel tracking-widest font-bold text-theme-900 uppercase">TWENTY TWENTY SIX</p>
                       </div>
-                      
-                      <div className="w-[1.5px] bg-[#c59d5f]"></div>
-                      
+
+                      <div className="w-[1.5px] bg-[#9B70C0]"></div>
+
                       <div className="flex-1 flex flex-col items-start text-left justify-center space-y-1.5">
                         <p className="text-[11px] md:text-xs font-cinzel tracking-widest font-bold text-theme-900 uppercase">AT</p>
                         <p className="text-xs md:text-sm font-cinzel tracking-widest font-bold text-theme-900 uppercase leading-snug">
-                          MONARCH IMPERIAL<br/>BALLROOM
+                          MONARCH IMPERIAL<br />BALLROOM
                         </p>
                       </div>
                     </div>
@@ -335,10 +335,10 @@ export default function EngagementInvitation() {
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 my-6 w-full">
-                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
-                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
-                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
+                    <div className="flex items-center justify-center gap-2 text-[#9B70C0] opacity-80 my-6 w-full">
+                      <div className="h-[1.5px] w-12 bg-[#9B70C0]/50"></div>
+                      <div className="text-[#9B70C0] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-12 bg-[#9B70C0]/50"></div>
                     </div>
 
                     <div className="text-center space-y-2 mb-4">
@@ -346,7 +346,7 @@ export default function EngagementInvitation() {
                         RSVP BEFORE 15TH NOVEMBER
                       </p>
                       <div className="text-[10px] md:text-[11px] font-cinzel text-theme-900 tracking-[0.15em] font-bold uppercase">
-                        RANDIKA: 076 4414252 <span className="mx-2 text-[#c59d5f]">|</span> SUDATH: 077 8189174
+                        RANDIKA: 076 4414252 <span className="mx-2 text-[#9B70C0]">|</span> SUDATH: 077 8189174
                       </div>
                     </div>
 
@@ -356,7 +356,7 @@ export default function EngagementInvitation() {
                         href="https://maps.app.goo.gl/dSY1ynsZqWc8TLAE7"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-theme-500/40 text-[#c59d5f] hover:bg-[#c59d5f] hover:text-brown-base transition-all duration-300 font-bold tracking-[0.1em] text-xs uppercase shadow-md shadow-theme-500/5 hover:shadow-theme-500/20"
+                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-theme-500/40 text-[#9B70C0] hover:bg-[#9B70C0] hover:text-brown-base transition-all duration-300 font-bold tracking-[0.1em] text-xs uppercase shadow-md shadow-theme-500/5 hover:shadow-theme-500/20"
                       >
                         <MapPin className="w-4 h-4" />
                         View Location on Maps
@@ -382,10 +382,10 @@ export default function EngagementInvitation() {
                   <div className="w-full pt-6 pb-2 text-center">
                     <p className="text-theme-700 text-[9px] md:text-[10px] font-sans tracking-wider">
                       Want a beautiful wedding website like this? Create yours with{" "}
-                      <a 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        className="text-theme-900 font-bold hover:text-theme-500 underline transition-colors" 
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-theme-900 font-bold hover:text-theme-500 underline transition-colors"
                         href="https://wa.me/94707819074"
                       >
                         invitemint
@@ -394,8 +394,8 @@ export default function EngagementInvitation() {
                   </div>
 
                 </div>
-                </div>
               </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -9,27 +9,27 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-playball: "Playball", cursive;
 
-  --color-gold-light: #FDF1F4; /* soft pink */
-  --color-gold: #8A9A5B; /* sage green */
-  --color-gold-dark: #6B7A42;
-  --color-sage: #8A9A5B;
+  --color-gold-light: #F5EEF8; /* soft lavender */
+  --color-gold: #B799D4; /* lavender */
+  --color-gold-dark: #9B70C0;
+  --color-sage: #B799D4;
   --color-paper: #FFFFFF;
 
   --color-brown-base: #FFFFFF; /* white for card */
-  --color-brown-dark: #FDF1F4; /* soft pink for background */
-  --color-brown-light: #F8E5E5;
+  --color-brown-dark: #F5EEF8; /* soft lavender for background */
+  --color-brown-light: #EBE0F1;
 
-  /* Theme colors - sage green / lilac mix */
-  --color-theme-50: #FCFDFB;
-  --color-theme-100: #F4F6F0;
-  --color-theme-200: #E6EBE0;
-  --color-theme-300: #D8E0D0;
-  --color-theme-400: #8A9A5B; /* old 500 */
-  --color-theme-500: #6B7A42; /* old 700 */
-  --color-theme-600: #4B5A33; /* old 800 */
-  --color-theme-700: #3B4A23; /* old 900 */
-  --color-theme-800: #252F15; /* darker text */
-  --color-theme-900: #12180A; /* almost black sage */
+  /* Theme colors - lavender palette */
+  --color-theme-50: #F9F7FC;
+  --color-theme-100: #F3EEF9;
+  --color-theme-200: #E6DCF2;
+  --color-theme-300: #D5C2E8;
+  --color-theme-400: #B799D4; 
+  --color-theme-500: #9B70C0; 
+  --color-theme-600: #7F51A6; 
+  --color-theme-700: #663F8A; 
+  --color-theme-800: #553572; 
+  --color-theme-900: #2F1B40; 
 }
 
 :root {
