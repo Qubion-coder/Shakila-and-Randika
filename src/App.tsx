@@ -112,7 +112,7 @@ export default function EngagementInvitation() {
     <main className="h-[100dvh] w-full bg-brown-dark overflow-hidden relative flex items-center justify-center font-montserrat">
       <FloatingPetals />
 
-      <audio ref={audioRef} src="/hetaka-mangala-mudu-da-mahiru-senarathne-yashodha-medagedara.mp3" loop />
+      <audio ref={audioRef} src="/paulyudin-wedding-485932.mp3" loop autoPlay />
 
       <AnimatePresence mode="wait">
         {!isOpened ? (
@@ -133,9 +133,9 @@ export default function EngagementInvitation() {
                 Save the Date
               </span>
               <h1 className="font-cinzel text-4xl md:text-5xl text-theme-900 mb-4 tracking-tight">
-                Nadith & Gayathri
+                Shakila & Randika
               </h1>
-              <p className="text-theme-600 text-sm tracking-[0.2em] font-light">OCTOBER 16, 2026</p>
+              <p className="text-theme-600 text-sm tracking-[0.2em] font-light">DECEMBER 02, 2026</p>
             </motion.div>
 
             {/* Gatefold Envelope */}
@@ -164,7 +164,7 @@ export default function EngagementInvitation() {
                 <div className="absolute right-0 top-0 bottom-0 w-1 bg-theme-400/30 z-10" />
 
                 <div className="text-theme-200/40 rotate-90 whitespace-nowrap text-xs tracking-[0.5em] uppercase font-bold relative z-10">
-                  NADITH & GAYATHRI
+                  SHAKILA & RANDIKA
                 </div>
               </motion.div>
 
@@ -195,7 +195,7 @@ export default function EngagementInvitation() {
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 rounded-full bg-gradient-to-br from-theme-200 via-theme-100 to-theme-300 shadow-2xl border-4 border-[#3d2a25] flex items-center justify-center group-hover:shadow-theme-500/20 cursor-pointer"
               >
                 <div className="text-center">
-                  <p className="font-cinzel text-2xl font-bold text-[#3d2a25] leading-none">N&G</p>
+                  <p className="font-cinzel text-2xl font-bold text-[#3d2a25] leading-none">S&R</p>
                   <div className="h-px w-10 bg-[#3d2a25]/30 mx-auto my-1.5" />
                   <p className="text-[8px] uppercase tracking-[0.3em] font-bold text-[#3d2a25]">Open</p>
                 </div>
@@ -258,226 +258,110 @@ export default function EngagementInvitation() {
                   <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]" />
 
                   {/* Content Sections */}
-                  <div className="flex flex-col items-center justify-center space-y-2 md:space-y-3 relative z-10 w-full">
+                  <div className="flex flex-col items-center justify-center relative z-10 w-full mt-48 sm:mt-48 mb-8 px-2">
 
-                  {/* Top Mandala */}
-                  {/* <img src={mandalaImage} alt="Mandala" className="w-10 h-10 md:w-12 md:h-12 object-contain mb-1 mx-auto mix-blend-multiply" /> */}
+                    {guestName && (
+                      <div className="text-center mb-6">
+                        <p className="font-playball text-3xl md:text-4xl text-theme-900 drop-shadow-sm mb-1">
+                          Dear
+                        </p>
+                        <p className="font-cinzel text-base md:text-lg font-bold text-[#c59d5f] tracking-wider">
+                          {guestPrefix} {guestName},
+                        </p>
+                      </div>
+                    )}
 
-                  {/* Names Section */}
-                  <div className="flex flex-col items-center justify-center space-y-2 mt-44 sm:mt-52">
-
-                    <div className="text-center space-y-1">
-                      <p className="text-[10px] md:text-xs tracking-[0.2em] font-medium text-theme-600 uppercase">Loving son of</p>
-                      <p className="text-xs md:text-sm font-cinzel text-theme-800 uppercase tracking-widest">Mr. & Mrs. Senevirathne</p>
+                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 mb-5 w-full">
+                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
+                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-playball text-theme-900 leading-none py-1 drop-shadow-sm">Nadith</h2>
-
-                    <div className="flex items-center justify-center gap-3 w-full my-1">
-                      <div className="h-[0.5px] w-12 bg-gradient-to-r from-transparent to-theme-500"></div>
-                      <span className="text-2xl md:text-3xl font-playball text-theme-500 leading-none">&</span>
-                      <div className="h-[0.5px] w-12 bg-gradient-to-l from-transparent to-theme-500"></div>
-                    </div>
-
-                    <h2 className="text-4xl md:text-5xl font-playball text-theme-900 leading-none py-1 drop-shadow-sm">Gayathri</h2>
-
-                    <div className="text-center space-y-1 mt-2">
-                      <p className="text-[10px] md:text-xs tracking-[0.2em] font-medium text-theme-600 uppercase">Loving daughter of</p>
-                      <p className="text-xs md:text-sm font-cinzel text-theme-800 uppercase tracking-widest">Mr. & Mrs. Gunawardane</p>
-                    </div>
-
-                  </div>
-
-                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-theme-500/50 to-transparent mx-auto" />
-
-                  {/* Guest Greeting */}
-                  {guestName && (
-                    <motion.div 
-                      initial={{ opacity: 0, y: 20 }} 
-                      animate={{ opacity: 1, y: 0 }} 
-                      className="mb-4 px-6 py-3 rounded-full bg-brown-base/90 border border-theme-500/20 shadow-md backdrop-blur-sm mx-auto"
-                    >
-                      <p className="font-cinzel text-sm md:text-base font-bold text-theme-900 tracking-wider">
-                        Dear {guestPrefix} {guestName} <span className="text-red-500">❤️</span>
-                      </p>
-                    </motion.div>
-                  )}
-
-                  {/* Invitation Text */}
-                  <div className="space-y-1.5 max-w-[320px] mx-auto py-2">
-                    <p className="text-[10px] md:text-xs tracking-widest font-semibold text-theme-600 uppercase">Together with our families</p>
-                    <p className="text-base md:text-lg italic text-theme-600/90 font-serif leading-relaxed">
-                      joyfully invite you to celebrate our engagement
+                    <p className="font-playball text-4xl md:text-5xl tracking-wide text-theme-900 drop-shadow-sm mb-6">
+                      With Heartfelt Joy And Gratitude,
                     </p>
-                  </div>
 
-                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-theme-500/50 to-transparent mx-auto" />
-
-                  {/* Date Section */}
-                  <div className="space-y-3 md:space-y-4 py-2">
-                    <div className="flex flex-col items-center">
-                      <p className="text-[10px] md:text-xs font-cinzel tracking-[0.2em] font-bold text-theme-600 uppercase">FRIDAY</p>
-                      <p className="text-3xl md:text-5xl font-cinzel text-theme-500 leading-none my-2 font-bold">16</p>
-                      <p className="text-[10px] md:text-xs font-cinzel tracking-[0.2em] font-bold text-theme-600 uppercase">October 2026</p>
+                    <div className="text-center">
+                      <p className="text-[11px] md:text-xs font-cinzel text-theme-900 uppercase tracking-widest leading-[2] font-bold">
+                        Mr. Sudath De Silva & Mrs. Sumalka De Silva
+                        <br/>
+                        <span className="text-[9px] md:text-[10px] tracking-[0.25em] text-theme-700 mt-2 mb-2 inline-block">TOGETHER WITH</span>
+                        <br/>
+                        Mr. Benaji Wickramarachchi & Mrs. Sandhya Liyanagamage
+                      </p>
                     </div>
 
-                    <div className="space-y-1">
-                      <h3 className="text-xs md:text-base font-cinzel tracking-wider text-theme-900 uppercase font-bold">Sundale Hotel Divulapitiya</h3>
+                    <div className="text-center space-y-1 my-6 px-2">
+                       <p className="text-[11px] md:text-xs tracking-[0.15em] font-bold text-theme-900 uppercase leading-[2] font-cinzel">
+                         Request the pleasure of your presence<br/>at the wedding celebration of<br/>their beloved children
+                       </p>
                     </div>
 
-                    <div className="flex flex-col items-center gap-1">
-                      <div className="flex items-center justify-center gap-2 text-[10px] md:text-xs font-semibold tracking-widest text-theme-700">
-                        <Clock className="w-4 h-4 text-theme-500" />
-                        <span>09:30 AM - 04:00 PM</span>
+                    <div className="flex flex-col items-center justify-center space-y-0 my-2">
+                      <h2 className="text-6xl md:text-7xl font-playball text-[#c59d5f] leading-none py-1 drop-shadow-md">Shakila</h2>
+                      <span className="text-4xl md:text-5xl font-playball text-[#c59d5f] leading-none drop-shadow-md">&</span>
+                      <h2 className="text-6xl md:text-7xl font-playball text-[#c59d5f] leading-none py-1 drop-shadow-md">Randika</h2>
+                    </div>
+
+                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 my-8 w-full">
+                      <div className="h-[1.5px] w-16 bg-[#c59d5f]/50"></div>
+                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-16 bg-[#c59d5f]/50"></div>
+                    </div>
+
+                    <div className="flex items-stretch justify-center w-full max-w-[340px] mx-auto gap-4">
+                      <div className="flex-1 flex flex-col items-end text-right justify-center">
+                        <p className="text-[10px] md:text-[11px] font-cinzel tracking-widest font-bold text-theme-900 uppercase">WEDNESDAY, DECEMBER</p>
+                        <p className="text-5xl md:text-6xl font-cinzel text-theme-900 leading-none my-1 font-bold">02<span className="text-xl md:text-2xl align-super font-semibold">ND</span></p>
+                        <p className="text-[10px] md:text-[11px] font-cinzel tracking-widest font-bold text-theme-900 uppercase">TWENTY TWENTY SIX</p>
+                      </div>
+                      
+                      <div className="w-[1.5px] bg-[#c59d5f]"></div>
+                      
+                      <div className="flex-1 flex flex-col items-start text-left justify-center space-y-1.5">
+                        <p className="text-[11px] md:text-xs font-cinzel tracking-widest font-bold text-theme-900 uppercase">AT</p>
+                        <p className="text-xs md:text-sm font-cinzel tracking-widest font-bold text-theme-900 uppercase leading-snug">
+                          MONARCH IMPERIAL<br/>BALLROOM
+                        </p>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Location Connection Link */}
-                  <div className="pt-2 w-full max-w-[280px] mx-auto">
-                    <a
-                      href="https://maps.app.goo.gl/95T2gEwmyxq1KyLf6"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-theme-500/40 text-theme-500 hover:bg-theme-500 hover:text-brown-base transition-all duration-300 font-bold tracking-[0.1em] text-[10px] uppercase shadow-md shadow-theme-500/5 hover:shadow-theme-500/20"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View Location on Maps
-                    </a>
-                  </div>
-
-                  <div className="w-full h-px bg-gradient-to-r from-transparent via-theme-500/30 to-transparent my-1 mx-auto" />
-
-                  {/* RSVP Section */}
-                  <div className="w-full max-w-[280px] space-y-2 pt-1 mx-auto">
-                    <div className="text-center space-y-0.5">
-                      <h4 className="font-cinzel text-[10px] md:text-xs tracking-widest text-theme-900 font-bold uppercase">
-                        Will You Attend?
-                      </h4>
-                      <p className="text-[10px] md:text-xs text-theme-600 italic mt-1">
-                        Please respond on or before 30th September 2026
+                    <div className="flex flex-col items-center gap-1.5 text-center mt-8 mb-2">
+                      <p className="text-[11px] md:text-xs font-cinzel font-bold tracking-widest text-theme-900 uppercase">
+                        FROM 09.00 AM TO 03.00 PM
+                      </p>
+                      <p className="text-[10px] md:text-[11px] font-cinzel font-bold tracking-widest text-theme-900 uppercase">
+                        (PORUWA CEREMONY AT 09.00 AM)
                       </p>
                     </div>
 
-                    <AnimatePresence mode="wait">
-                      {!rsvpSubmitted ? (
-                        <motion.form
-                          key="rsvp-form"
-                          onSubmit={handleRsvpSubmit}
-                          className="w-full space-y-3 text-left bg-brown-base/90 backdrop-blur-sm p-4 rounded-3xl shadow-sm border border-theme-500/10"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                        >
-                          <div>
-                            <label className="block text-[8px] uppercase tracking-[0.15em] text-theme-600 font-medium mb-1.5 ml-1">
-                              Full Name
-                            </label>
-                            <input
-                              type="text"
-                              required
-                              value={rsvpName}
-                              onChange={(e) => setRsvpName(e.target.value)}
-                              placeholder="Your name"
-                              className="w-full px-4 py-2.5 rounded-xl bg-transparent border border-theme-500/30 text-theme-900 placeholder-theme-700/40 focus:outline-none focus:border-theme-500/70 text-xs transition-colors"
-                            />
-                          </div>
+                    <div className="flex items-center justify-center gap-2 text-[#c59d5f] opacity-80 my-6 w-full">
+                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
+                      <div className="text-[#c59d5f] text-[10px] font-serif">✧</div>
+                      <div className="h-[1.5px] w-12 bg-[#c59d5f]/50"></div>
+                    </div>
 
-                          <div>
-                            <label className="block text-[8px] uppercase tracking-[0.15em] text-theme-600 font-medium mb-1.5 ml-1 mt-3">
-                              Will You Attend?
-                            </label>
-                            <div className="grid grid-cols-2 gap-2">
-                              <button
-                                type="button"
-                                onClick={() => setAttendance("attending")}
-                                className={`py-2.5 rounded-xl border text-[9px] font-serif transition-all duration-300 ${attendance === "attending"
-                                    ? "bg-theme-500/10 text-theme-900 border-theme-500/60 shadow-sm"
-                                    : "bg-transparent border-theme-500/30 text-theme-700 hover:border-theme-500/60"
-                                  }`}
-                              >
-                                Joyfully accepts
-                              </button>
-                              <button
-                                type="button"
-                                onClick={() => setAttendance("declined")}
-                                className={`py-2.5 rounded-xl border text-[9px] font-serif transition-all duration-300 ${attendance === "declined"
-                                    ? "bg-theme-500/10 text-theme-900 border-theme-500/60 shadow-sm"
-                                    : "bg-transparent border-theme-500/30 text-theme-700 hover:border-theme-500/60"
-                                  }`}
-                              >
-                                Regretfully declines
-                              </button>
-                            </div>
-                          </div>
+                    <div className="text-center space-y-2 mb-4">
+                      <p className="text-[11px] md:text-xs font-cinzel font-bold text-theme-900 tracking-widest uppercase mb-2">
+                        RSVP BEFORE 15TH NOVEMBER
+                      </p>
+                      <div className="text-[10px] md:text-[11px] font-cinzel text-theme-900 tracking-[0.15em] font-bold uppercase">
+                        RANDIKA: 076 4414252 <span className="mx-2 text-[#c59d5f]">|</span> SUDATH: 077 8189174
+                      </div>
+                    </div>
 
-                          <AnimatePresence>
-                            {attendance === "attending" && (
-                              <motion.div
-                                initial={{ opacity: 0, height: 0 }}
-                                animate={{ opacity: 1, height: "auto" }}
-                                exit={{ opacity: 0, height: 0 }}
-                                className="overflow-hidden mt-3"
-                              >
-                                <label className="block text-[8px] uppercase tracking-[0.15em] text-theme-600 font-medium mb-2 ml-1">
-                                  Number of Guests
-                                </label>
-                                <div className="flex items-center justify-center gap-6 py-1">
-                                  <button
-                                    type="button"
-                                    onClick={() => setGuests(Math.max(1, guests - 1))}
-                                    className="w-8 h-8 rounded-full border border-theme-500/30 bg-theme-500/5 text-theme-700 flex items-center justify-center hover:bg-theme-500/15 transition-colors text-lg"
-                                  >
-                                    -
-                                  </button>
-                                  <span className="text-2xl font-serif text-theme-900 w-4 text-center">{guests}</span>
-                                  <button
-                                    type="button"
-                                    onClick={() => setGuests(Math.min(10, guests + 1))}
-                                    className="w-8 h-8 rounded-full border border-theme-500/30 bg-theme-500/5 text-theme-700 flex items-center justify-center hover:bg-theme-500/15 transition-colors text-lg"
-                                  >
-                                    +
-                                  </button>
-                                </div>
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
-
-                          <button
-                            type="submit"
-                            disabled={submitting || !rsvpName || !attendance}
-                            className="w-full py-3 mt-4 rounded-full bg-[#405645] hover:bg-[#324536] disabled:opacity-50 text-white font-medium text-[9px] tracking-widest uppercase shadow-md transition-all duration-150 cursor-pointer flex items-center justify-center gap-2"
-                          >
-                            {submitting ? (
-                              <div className="w-3 h-3 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                            ) : (
-                              <>
-                                <Send className="w-3 h-3" />
-                                Send our RSVP
-                              </>
-                            )}
-                          </button>
-                        </motion.form>
-                      ) : (
-                        <motion.div
-                          key="rsvp-success"
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0 }}
-                          className="w-full py-4 px-3 rounded-lg bg-brown-dark/30 border border-theme-500/10 text-center space-y-2"
-                        >
-                          <div className="w-8 h-8 rounded-full bg-theme-500/10 border border-theme-500/20 flex items-center justify-center mx-auto text-theme-500">
-                            <Sparkles className="w-4 h-4 animate-pulse" />
-                          </div>
-                          <h4 className="font-cinzel text-[10px] text-theme-900 font-bold uppercase tracking-wider">Thank You!</h4>
-                          <p className="text-[8px] text-theme-600 max-w-[240px] mx-auto leading-relaxed">
-                            Your response has been received. We look forward to celebrating this special day with you!
-                          </p>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-
-
+                    {/* Location Connection Link */}
+                    <div className="pt-4 w-full max-w-[280px] mx-auto">
+                      <a
+                        href="https://maps.app.goo.gl/dSY1ynsZqWc8TLAE7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-theme-500/40 text-[#c59d5f] hover:bg-[#c59d5f] hover:text-brown-base transition-all duration-300 font-bold tracking-[0.1em] text-xs uppercase shadow-md shadow-theme-500/5 hover:shadow-theme-500/20"
+                      >
+                        <MapPin className="w-4 h-4" />
+                        View Location on Maps
+                      </a>
+                    </div>
                   </div>
 
                   {/* Bottom close button */}
@@ -512,7 +396,6 @@ export default function EngagementInvitation() {
                 </div>
                 </div>
               </div>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
