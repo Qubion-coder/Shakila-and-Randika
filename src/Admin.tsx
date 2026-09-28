@@ -22,7 +22,7 @@ ${generatedLink}
 Your presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.
 
 With love,
-❤️ Nadith & Gayathri`;
+❤️ Shakila & Randika`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(generatedLink);
