@@ -157,7 +157,7 @@ export default function EngagementInvitation() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <div
-                  className="absolute top-0 bottom-0 left-0 w-[200%] bg-cover bg-center z-0"
+                  className="absolute top-0 bottom-0 left-0 w-[200%] bg-[length:100%_100%] bg-center z-0"
                   style={{ backgroundImage: `url('/ChatGPT%20Image%20Sep%201,%202026,%2004_10_34%20AM.png')` }}
                 />
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] z-0" />
@@ -175,7 +175,7 @@ export default function EngagementInvitation() {
                 transition={{ type: "spring", stiffness: 100 }}
               >
                 <div
-                  className="absolute top-0 bottom-0 right-0 w-[200%] bg-cover bg-center z-0"
+                  className="absolute top-0 bottom-0 right-0 w-[200%] bg-[length:100%_100%] bg-center z-0"
                   style={{ backgroundImage: `url('/ChatGPT%20Image%20Sep%201,%202026,%2004_10_34%20AM.png')` }}
                 />
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] z-0" />
@@ -192,12 +192,12 @@ export default function EngagementInvitation() {
                     audioRef.current.play().then(() => setIsPlaying(true)).catch(err => console.log("Audio autoplay blocked", err));
                   }
                 }}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 rounded-full bg-gradient-to-br from-theme-200 via-theme-100 to-theme-300 shadow-2xl border-4 border-[#2F1B40] flex items-center justify-center group-hover:shadow-theme-500/20 cursor-pointer"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-24 h-24 rounded-full bg-gradient-to-br from-[#D4AF37] via-[#FDF5A9] to-[#996515] shadow-2xl border-4 border-[#A67C00] flex items-center justify-center group-hover:shadow-[#D4AF37]/40 cursor-pointer"
               >
                 <div className="text-center">
-                  <p className="font-cinzel text-2xl font-bold text-[#2F1B40] leading-none">S&R</p>
-                  <div className="h-px w-10 bg-[#2F1B40]/30 mx-auto my-1.5" />
-                  <p className="text-[8px] uppercase tracking-[0.3em] font-bold text-[#2F1B40]">Open</p>
+                  <p className="font-cinzel text-2xl font-bold text-[#3E2723] leading-none drop-shadow-sm">S&R</p>
+                  <div className="h-px w-10 bg-[#3E2723]/40 mx-auto my-1.5" />
+                  <p className="text-[8px] uppercase tracking-[0.3em] font-bold text-[#3E2723]">Open</p>
                 </div>
               </motion.div>
 
@@ -251,14 +251,21 @@ export default function EngagementInvitation() {
 
                 {/* Scrolling Background and Content Wrapper */}
                 <div
-                  className="min-h-full w-full flex flex-col items-center justify-start p-4 sm:p-6 pb-20 relative text-center bg-top bg-cover bg-no-repeat"
+                  className="min-h-full w-full flex flex-col items-center justify-start p-4 sm:p-6 pb-20 relative text-center bg-top bg-[length:100%_100%] bg-no-repeat"
                   style={{ backgroundImage: `url('/ChatGPT%20Image%20Sep%201,%202026,%2004_23_03%20AM.png')` }}
                 >
                   {/* Background Textures */}
                   <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]" />
 
                   {/* Content Sections */}
-                  <div className="flex flex-col items-center justify-center relative z-10 w-full mt-48 sm:mt-48 mb-8 px-2">
+                  <div className="flex flex-col items-center justify-center relative z-10 w-full mt-12 sm:mt-16 mb-8 px-2">
+
+                    {/* Logo */}
+                    <img 
+                      src="/Gemini_Generated_Image_z4yfetz4yfetz4yf-removebg-preview.png" 
+                      alt="Wedding Logo" 
+                      className="w-24 md:w-32 h-auto mb-8 drop-shadow-sm object-contain"
+                    />
 
                     {guestName && (
                       <div className="text-center mb-6">
