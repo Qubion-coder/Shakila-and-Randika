@@ -16,8 +16,8 @@
   --color-paper: #FFFFFF;
 
   --color-brown-base: #FFFFFF; /* white for card */
-  --color-brown-dark: #F5EEF8; /* soft lavender for background */
-  --color-brown-light: #EBE0F1;
+  --color-brown-dark: #FDF0E7; /* match with envelope color */
+  --color-brown-light: #FBE6D4;
 
   /* Theme colors - lavender palette */
   --color-theme-50: #F9F7FC;

@@ -353,7 +353,7 @@ export default function EngagementInvitation() {
                         RSVP BEFORE 15TH NOVEMBER
                       </p>
                       <div className="text-[10px] md:text-[11px] font-cinzel text-theme-900 tracking-[0.15em] font-bold uppercase">
-                        RANDIKA: 076 4414252 <span className="mx-2 text-[#9B70C0]">|</span> SUDATH: 077 8189174
+                        RANDIKA: 076 4414252 <span className="mx-2 text-[#9B70C0]">|</span> SHAKILA: 076 2920194
                       </div>
                     </div>
 
