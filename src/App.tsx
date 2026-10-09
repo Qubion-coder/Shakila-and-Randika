@@ -272,9 +272,32 @@ export default function EngagementInvitation() {
                         <p className="font-playball text-3xl md:text-4xl text-theme-900 drop-shadow-sm mb-1">
                           Dear
                         </p>
-                        <p className="font-cinzel text-base md:text-lg font-bold text-[#D4AF37] tracking-wider">
-                          {guestPrefix} {guestName},
-                        </p>
+                        <motion.p 
+                          className="font-serif text-3xl md:text-4xl font-bold text-[#D4AF37] tracking-wider drop-shadow-lg"
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          variants={{
+                            hidden: { opacity: 1 },
+                            visible: {
+                              transition: { staggerChildren: 0.08, delayChildren: 0.2 }
+                            }
+                          }}
+                        >
+                          {`${guestPrefix} ${guestName},`.split("").map((char, index) => (
+                            <motion.span
+                              key={index}
+                              variants={{
+                                hidden: { opacity: 0, y: 10 },
+                                visible: { opacity: 1, y: 0 }
+                              }}
+                              transition={{ duration: 0.4, ease: "easeOut" }}
+                              className="inline-block"
+                            >
+                              {char === " " ? "\u00A0" : char}
+                            </motion.span>
+                          ))}
+                        </motion.p>
                       </div>
                     )}
 
